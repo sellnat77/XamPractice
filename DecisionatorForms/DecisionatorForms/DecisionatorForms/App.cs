@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DecisionatorForms.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,8 +28,14 @@ namespace DecisionatorForms
                 }
             };
 
-            MainPage = new NavigationPage(content);
+            LoginPage loginPage = new LoginPage();
+
+            MainPage = new NavigationPage(loginPage);
+
+            //MainPage = new NavigationPage(content);
         }
+
+        public static Action<string> PostSuccessFacebookAction { get; set; }
 
         protected override void OnStart()
         {

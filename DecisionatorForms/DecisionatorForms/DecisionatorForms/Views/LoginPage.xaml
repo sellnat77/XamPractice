@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Decisionator="clr-namespace:DecisionatorForms.CustomContorls;assembly=DecisionatorForms"
+             x:Class="DecisionatorForms.Views.LoginPage">
+  <StackLayout Spacing="20" Padding="20" VerticalOptions="Fill" HorizontalOptions="Center" >
+
+    <Decisionator:FacebookLoginButton BackgroundColor="Navy"  WidthRequest="240" Text="Facebook Login"  TextColor="White"  HorizontalOptions="Center"></Decisionator:FacebookLoginButton>
+
+
+  </StackLayout>
+</ContentPage>
